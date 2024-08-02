@@ -1,4 +1,4 @@
-(() => {
+document.addEventListener("DOMContentLoaded", function() {
   const sec = 1000,
         min = sec * 60,
         hour = min * 60,
@@ -25,4 +25,4 @@
       clearInterval(int);
     }
   }, 1000);
-})();
+});
