@@ -18,26 +18,12 @@ body {
     line-height: 1;
     background: linear-gradient(to bottom, #00143e, #0053b1);
     color: var(--text-white);
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .container {
     margin: 0 1rem;
-    width: 100%;
-    max-width: 1200px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 /* Global */
 .coming_soon,
-.form,
 .counter,
 .counter .count {
     display: flex;
@@ -49,8 +35,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 .logo {
     margin-bottom: 1rem;
@@ -59,20 +44,20 @@ body {
     align-items: center;
 }
 .logo img {
-    width: 30%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 .sm_text {
     font-size: clamp(1.2rem, 2vw, 2rem);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Adjusted margin-bottom to add spacing */
     color: var(--primary);
     text-transform: uppercase;
     font-family: 'Courgette', cursive;
 }
 .main_text {
-    font-size: clamp(2.5rem, 10vw, 4rem);
+    font-size: clamp(2.5rem, 10vw, 6.5rem);
     text-transform: uppercase;
     letter-spacing: -0.07em;
     margin: 0;
@@ -86,35 +71,29 @@ body {
     line-height: 1.5;
     max-width: 800px;
     margin: 1.35rem auto;
-    padding: 0 1rem;
 }
 /* WhatsApp Link Box */
 .whatsapp-link-box {
-    margin: 1rem 0;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    background: var(--off-white);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
 }
 .whatsapp-link-box a {
     display: flex;
     align-items: center;
-    background: var(--off-white);
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
     color: var(--dark);
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: background 0.3s ease;
-    width: 100%;
-    max-width: 500px;
-    justify-content: center;
+    font-weight: 600;
+    text-decoration: none;
 }
 .whatsapp-link-box a:hover {
-    background: var(--primary);
-    color: var(--light);
+    color: var(--primary);
 }
-.whatsapp-logo {
+.whatsapp-link-box .whatsapp-logo {
     width: 24px;
     height: 24px;
     margin-right: 0.5rem;
@@ -122,42 +101,35 @@ body {
 /* Counter */
 .counter {
     flex-wrap: wrap;
-    margin: 1rem 0;
-    width: 100%;
-    justify-content: center;
+    margin:  1rem 0;
 }
 .counter .count {
     flex-direction: column;
-    margin: 0.5rem;
+    margin: .5rem;
     color: var(--dark);
     background: var(--off-white);
-    width: 70px;
-    border-radius: 0.35rem;
-    padding: 0.5rem;
+    width: 90px;
+    border-radius: .35rem;
+    padding: 1rem;
 }
 .counter .count span.digit {
-    font-size: clamp(1.35rem, 2vw, 1.5rem);
+    font-size: clamp(1.35rem, 2vw, 2rem);
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 .counter .count span {
-    opacity: 0.80;
+    opacity: .80;
     font-weight: 500;
     letter-spacing: -1px;
     text-transform: uppercase;
 }
 /* Socials */
-.socials {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
 .socials a {
     margin: 0 0.75rem;
-    opacity: 0.7;
+    opacity: .7;
     color: var(--light);
     font-size: 1.15rem;
-    transition: 0.3s ease;
+    transition: .3s ease;
 }
 .socials a:hover { 
     opacity: 1;
