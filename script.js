@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         hour = min * 60,
         day = hour * 24;
 
-  const end = new Date("August 22, 2024 00:00:00").getTime();
+  const end = new Date("August 25, 2024 00:00:00").getTime();
 
   const int = setInterval(() => {
     const current = new Date().getTime();
